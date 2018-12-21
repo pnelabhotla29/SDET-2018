@@ -1,0 +1,123 @@
+{
+  "id": "5454de4c-9a94-4ba8-aba5-cd095908ab28",
+  "version": "1.1",
+  "name": "IDE Testing Example",
+  "url": "http://sdettraining.com",
+  "tests": [{
+    "id": "b60df40b-5e8c-4869-91d8-7996ef4f4af0",
+    "name": "Test1",
+    "commands": [{
+      "id": "0ab380bb-be1d-4673-9fb1-360d928c466a",
+      "comment": "",
+      "command": "open",
+      "target": "/online/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a0bda89f-166c-4c8d-a21d-2e5939a23a5c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1004x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e59e9637-5e41-4c8d-915d-7ae988e32434",
+      "comment": "",
+      "command": "click",
+      "target": "name=txtSearch",
+      "targets": [
+        ["name=txtSearch", "name"],
+        ["css=input[name=\"txtSearch\"]", "css"],
+        ["css=td:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='txtSearch']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a4dcf6d-0f72-4832-80dc-075f8daf586e",
+      "comment": "",
+      "command": "type",
+      "target": "name=txtSearch",
+      "targets": [
+        ["name=txtSearch", "name"],
+        ["css=input[name=\"txtSearch\"]", "css"],
+        ["css=td:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='txtSearch']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "iphone"
+    }, {
+      "id": "a10b14fe-7034-468a-ae50-dbffd0b6616e",
+      "comment": "",
+      "command": "click",
+      "target": "id=Go",
+      "targets": [
+        ["id=Go", "id"],
+        ["css=#Go", "css"],
+        ["css=#Go", "css:finder"],
+        ["xpath=//input[@id='Go']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f71a53ee-5c79-4f88-8473-d4ebc86a593f",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnApple_Iphone_6.jpg",
+      "targets": [
+        ["id=btnApple_Iphone_6.jpg", "id"],
+        ["css=#btnApple_Iphone_6\\.jpg", "css:finder"],
+        ["xpath=//img[@id='btnApple_Iphone_6.jpg']", "xpath:attributes"],
+        ["xpath=//td[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c583248-0387-4728-b31b-47a2c136eecb",
+      "comment": "",
+      "command": "click",
+      "target": "name=txtItemQty1",
+      "targets": [
+        ["name=txtItemQty1", "name"],
+        ["css=input[name=\"txtItemQty1\"]", "css"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='txtItemQty1']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b8d53dc-9b0b-489f-90fd-be60416fb388",
+      "comment": "",
+      "command": "type",
+      "target": "name=txtItemQty1",
+      "targets": [
+        ["name=txtItemQty1", "name"],
+        ["css=input[name=\"txtItemQty1\"]", "css"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='txtItemQty1']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "75bf85ff-a09f-4da3-9ffe-a8854b260660",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(5)",
+      "targets": [
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=(//input[@name='cmdSubmit'])[3]", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "bd3dc5fe-2a22-470e-a213-5ef4883593cd",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b60df40b-5e8c-4869-91d8-7996ef4f4af0"]
+  }],
+  "urls": ["http://sdettraining.com/"],
+  "plugins": []
+}

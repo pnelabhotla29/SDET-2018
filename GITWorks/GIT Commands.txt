@@ -1,0 +1,225 @@
+Huser@MININT-1EDGAG6 MINGW64 ~
+$ pwd
+/c/Users/Huser
+
+Huser@MININT-1EDGAG6 MINGW64 ~
+$ cd Desktop/
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop
+$ cd GITWorks/
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks
+$ pwd
+/c/Users/Huser/Desktop/GITWorks
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks
+$ git init myrepo
+Initialized empty Git repository in C:/Users/Huser/Desktop/GITWorks/myrepo/.git/
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks
+$ ls -l
+total 0
+drwxr-xr-x 1 Huser 197121 0 Dec  6 09:55 myrepo/
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks
+$ cd myrepo
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/myrepo (master)
+$ ls -la
+total 4
+drwxr-xr-x 1 Huser 197121 0 Dec  6 09:55 ./
+drwxr-xr-x 1 Huser 197121 0 Dec  6 09:55 ../
+drwxr-xr-x 1 Huser 197121 0 Dec  6 09:55 .git/
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/myrepo (master)
+$ ls -lrt
+total 0
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/myrepo (master)
+$ git config user.name
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/myrepo (master)
+$ git config user.name Prasanna
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/myrepo (master)
+$ git config --global user.name Prasanna
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/myrepo (master)
+$ git config --global user.email prasanna.nelabhotla@gmail.com
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/myrepo (master)
+$ git config --global --edit
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/myrepo (master)
+$ git config --global --edit
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/myrepo (master)
+$ pwd
+/c/Users/Huser/Desktop/GITWorks/myrepo
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/myrepo (master)
+$ vi sample.txt
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/myrepo (master)
+$ ls -lrt
+total 1
+-rw-r--r-- 1 Huser 197121 31 Dec  6 10:06 sample.txt
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/myrepo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        sample.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/myrepo (master)
+$ git add .
+warning: LF will be replaced by CRLF in sample.txt.
+The file will have its original line endings in your working directory
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/myrepo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   sample.txt
+
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/myrepo (master)
+$ git commit -m "initial version"
+[master (root-commit) a2b3629] initial version
+ 1 file changed, 1 insertion(+)
+ create mode 100644 sample.txt
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/myrepo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/myrepo (master)
+$ git log
+commit a2b362965b54bc0c3943c10a783191484036543e (HEAD -> master)
+Author: Prasanna <prasanna.nelabhotla@gmail.com>
+Date:   Thu Dec 6 10:11:35 2018 -0500
+
+    initial version
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/myrepo (master)
+$ git log --oneline
+a2b3629 (HEAD -> master) initial version
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/myrepo (master)
+$
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/myrepo (master)
+$ pwd
+/c/Users/Huser/Desktop/GITWorks/myrepo
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/myrepo (master)
+$ ls -lrt
+total 1
+-rw-r--r-- 1 Huser 197121 31 Dec  6 10:06 sample.txt
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/myrepo (master)
+$ vi sample1.txt
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/myrepo (master)
+$ ls -lrt
+total 2
+-rw-r--r-- 1 Huser 197121 31 Dec  6 10:06 sample.txt
+-rw-r--r-- 1 Huser 197121 77 Dec  6 10:16 sample1.txt
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/myrepo (master)
+$ git log sample1.txt
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/myrepo (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        sample1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/myrepo (master)
+$ git add .
+warning: LF will be replaced by CRLF in sample1.txt.
+The file will have its original line endings in your working directory
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/myrepo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   sample1.txt
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/myrepo (master)
+$ git commit -m "added new file"
+[master 795a5b7] added new file
+ 1 file changed, 2 insertions(+)
+ create mode 100644 sample1.txt
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/myrepo (master)
+$
+======================================
+Goto Github.com and login with your credentials.
+Create new repository online.
+We can now push your files to the repository in GITHUB.
+go to the local folder where you have files now to push it to Remote directory.
+git clone https://github.com/pnelabhotla29/SDET-2018
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/myrepo (master)
+$ ls
+sample.txt  sample1.txt
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/myrepo (master)
+$ cd ..
+ls
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks
+$ ls
+'GIT Commands.txt'   myrepo/   SDET-2018/
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks
+$ cd SDET-2018/
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/SDET-2018 (master)
+$ ls -lrt
+total 1
+-rw-r--r-- 1 Huser 197121 33 Dec  6 10:34  README.md
+drwxr-xr-x 1 Huser 197121  0 Dec  6 10:41  text/
+-rw-r--r-- 1 Huser 197121  0 Dec  6 10:41 'dummy file.txt'
+-rw-r--r-- 1 Huser 197121  0 Dec  6 10:42  laptop.txt.txt
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/SDET-2018 (master)
+$ git add .
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/SDET-2018 (master)
+$ git commit -m "added few files"
+[master 336f9fe] added few files
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 dummy file.txt
+ create mode 100644 laptop.txt.txt
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/SDET-2018 (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 301 bytes | 50.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/pnelabhotla29/SDET-2018.git
+   05afcc1..336f9fe  master -> master
+
+Huser@MININT-1EDGAG6 MINGW64 ~/Desktop/GITWorks/SDET-2018 (master)
+$
+===========================================
